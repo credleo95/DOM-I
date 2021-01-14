@@ -53,7 +53,7 @@ navBar[5].textContent = 'Contact'
 // navigational bar text above
  const lineBreak = document.createElement("BR")
 const heroStatement = document.querySelector('h1')
-heroStatement.textContent = 'DOM Is Awesome'
+heroStatement.innerHTML = 'DOM <br> Is <br> Awesome'
 console.log(heroStatement);
 
 const firstButton = document.querySelector('button')
@@ -62,7 +62,36 @@ firstButton.textContent = 'Get Started'
 const ctaImg = document.querySelector('#cta-img')
 ctaImg.src = 'img/header-img.png'
 
+const pHeadings = document.querySelectorAll('.text-content h4')
+console.log(pHeadings);
+pHeadings[0].textContent = 'Features'
+pHeadings[1].textContent = 'About'
+pHeadings[2].textContent = 'Services'
+pHeadings[3].textContent = 'Product'
+pHeadings[4].textContent = 'Vision'
 
+const paragraphs = document.querySelectorAll('.text-content p')
+console.log(paragraphs);
+paragraphs[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+paragraphs[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+paragraphs[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+paragraphs[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+paragraphs[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const midImage = document.querySelector("#middle-img")
+midImage.src = "img/mid-page-accent.jpg"
+
+const addressHeading = document.querySelector(".contact h4")
+addressHeading.textContent = "Contact"
+
+const addressInfo = document.querySelectorAll(".contact p")
+console.log(addressInfo);
+addressInfo[0].innerHTML = "123 Way 456 Street <br> Somewhere,USA"
+addressInfo[1].textContent = "1 (888) 888-8888"
+addressInfo[2].textContent = "sales@greatidea.io"
+
+const copyright = document.querySelector("footer p")
+copyright.textContent = "Copyright Great Idea! 2018"
 
 
 
