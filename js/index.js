@@ -43,56 +43,64 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navBar = document.querySelectorAll('nav a')
 console.log(navBar);
-navBar[0].textContent = 'Services'
-navBar[1].textContent = 'Product'
-navBar[2].textContent = 'Vision'
-navBar[3].textContent = 'Features'
-navBar[4].textContent = 'About'
-navBar[5].textContent = 'Contact'
+navBar[0].textContent = siteContent["nav"]["nav-item-1"]
+navBar[1].textContent = siteContent["nav"]["nav-item-2"]
+navBar[2].textContent = siteContent["nav"]["nav-item-3"]
+navBar[3].textContent = siteContent["nav"]["nav-item-4"]
+navBar[4].textContent = siteContent["nav"]["nav-item-5"]
+navBar[5].textContent = siteContent["nav"]["nav-item-6"]
 
 // navigational bar text above
  const lineBreak = document.createElement("BR")
 const heroStatement = document.querySelector('h1')
 heroStatement.innerHTML = 'DOM <br> Is <br> Awesome'
-console.log(heroStatement);
+
 
 const firstButton = document.querySelector('button')
-firstButton.textContent = 'Get Started'
+firstButton.textContent = siteContent["cta"]["button"]
 
 const ctaImg = document.querySelector('#cta-img')
-ctaImg.src = 'img/header-img.png'
+ctaImg.src = siteContent["cta"]["img-src"] 
+// middle content above
 
 const pHeadings = document.querySelectorAll('.text-content h4')
 console.log(pHeadings);
-pHeadings[0].textContent = 'Features'
-pHeadings[1].textContent = 'About'
-pHeadings[2].textContent = 'Services'
-pHeadings[3].textContent = 'Product'
-pHeadings[4].textContent = 'Vision'
+pHeadings[0].textContent = siteContent["main-content"]["features-h4"]
+pHeadings[1].textContent = siteContent["main-content"]["about-h4"]
+pHeadings[2].textContent = siteContent["main-content"]["services-h4"]
+pHeadings[3].textContent = siteContent["main-content"]["product-h4"]
+pHeadings[4].textContent = siteContent["main-content"]["vision-h4"]
+
+// paragraph headings organized via nodeList above 
 
 const paragraphs = document.querySelectorAll('.text-content p')
 console.log(paragraphs);
-paragraphs[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-paragraphs[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-paragraphs[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-paragraphs[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-paragraphs[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+paragraphs[0].textContent = siteContent["main-content"]["features-content"]
+paragraphs[1].textContent = siteContent["main-content"]["about-content"]
+paragraphs[2].textContent = siteContent["main-content"]["services-content"]
+paragraphs[3].textContent = siteContent["main-content"]["product-content"]
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"]
+
+// full paragraphs organized via nodeList above
 
 const midImage = document.querySelector("#middle-img")
-midImage.src = "img/mid-page-accent.jpg"
+midImage.src = siteContent["main-content"]["middle-img-src"]
+
+// Image separating top paragraphs from bottom paragraphs above
 
 const addressHeading = document.querySelector(".contact h4")
-addressHeading.textContent = "Contact"
+addressHeading.textContent = siteContent["contact"]["contact-h4"]
 
 const addressInfo = document.querySelectorAll(".contact p")
 console.log(addressInfo);
 addressInfo[0].innerHTML = "123 Way 456 Street <br> Somewhere,USA"
-addressInfo[1].textContent = "1 (888) 888-8888"
-addressInfo[2].textContent = "sales@greatidea.io"
+addressInfo[1].textContent = siteContent["contact"]["phone"]
+addressInfo[2].textContent = siteContent["contact"]["email"]
 
 const copyright = document.querySelector("footer p")
-copyright.textContent = "Copyright Great Idea! 2018"
+copyright.textContent = siteContent["footer"]["copyright"]
 
+// Address and copyright section above
 
 
 
